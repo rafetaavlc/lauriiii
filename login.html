@@ -1,24 +1,30 @@
-<!DOCTYPE html>
-<html lang="es">
- <head>
-     <meta charset="utf-8">
-  <title>INICIO DE SESION</title>
-  <link rel="stylesheet" href="">
- </head>
- <body><center>
-  <H1>INICIAR SESION</H1>
-  <script src="inicio.js"></script>
-  <form name=form action="INICIO SESION"
-        
-        <p>Usuario: <input type=text name=login>
-  <p>Contraseña: <input type=password name=password>
-   <br>
-   <input oneclick=ir() type=button value="INICIAR ">
-   
-   
-   
-  </form>
+<script language="javascript">
+ 
+  var contra = "lauri";
+ 
+ contra = prompt("pon la contraseña para continuar")
+ 
+ if (contra == "admin")
+ {
+  alert("Bien");
+  document.write("Redireccionando...");
+  var pagina="si_no.html"
+  function redireccionar()
+  {
+   location.href=pagina
+  }
+     setTimeout ("redireccionar()", 0);
   
-  </center>
- </body>
-</html>
+ }
+ else
+ {
+  
+  alert("Incorrecto");
+  var pagina="script.html"
+  function redireccionar()
+  {
+   location.href=pagina
+  }
+  setTimeout ("redireccionar()", 1);
+ }
+</script>
