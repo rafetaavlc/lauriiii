@@ -1,5 +1,5 @@
 <?php
- if($_POST)){
+ if($_POST){
 # Aqui definimos el usuario y password
 # Puedes cambiar el usuario y clave x lo q sea
 $usuario = 'lauri';
